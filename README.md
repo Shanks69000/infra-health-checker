@@ -15,7 +15,7 @@ Inspiré de workflows de monitoring réalisés en production (cybersécurité).
 
 ## Dernier rapport
 
-Consultable dans [`reports/latest.md`](reports/latest.md) — mis à jour automatiquement par GitHub Actions.
+Consultable dans [`reports/latest.md`](reports/latest.md), mis à jour automatiquement par GitHub Actions.
 
 ## Configuration
 
