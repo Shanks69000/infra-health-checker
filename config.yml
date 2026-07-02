@@ -1,0 +1,44 @@
+---
+checks:
+  http:
+    - name: GitHub
+      url: https://github.com
+      expected_status: 200
+      timeout: 10
+
+    - name: Docker Hub
+      url: https://hub.docker.com
+      expected_status: 200
+      timeout: 10
+
+    - name: Terraform Registry
+      url: https://registry.terraform.io
+      expected_status: 200
+      timeout: 10
+
+  tls:
+    - name: GitHub TLS
+      host: github.com
+      port: 443
+      warn_days: 30
+
+    - name: Docker Hub TLS
+      host: hub.docker.com
+      port: 443
+      warn_days: 30
+
+  tcp:
+    - name: GitHub SSH
+      host: github.com
+      port: 22
+      timeout: 5
+
+    - name: Google DNS
+      host: 8.8.8.8
+      port: 53
+      timeout: 5
+
+  dns:
+    - name: GitHub DNS
+      domain: github.com
+      nameserver: 8.8.8.8
