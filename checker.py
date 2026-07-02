@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Infrastructure health checker — reads config.yml, runs checks, outputs reports."""
+"""Infrastructure health checker : reads config.yml, runs checks, outputs reports."""
 
 import json
 import socket
