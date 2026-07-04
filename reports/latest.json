@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-03T19:16:13.520995+00:00",
+  "timestamp": "2026-07-04T02:36:31.315684+00:00",
   "total": 8,
   "passed": 8,
   "failed": 0,
@@ -10,7 +10,7 @@
       "target": "https://github.com",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.04,
+      "response_time": 0.039,
       "pass": true
     },
     {
@@ -19,7 +19,7 @@
       "target": "https://hub.docker.com",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.202,
+      "response_time": 0.133,
       "pass": true
     },
     {
@@ -28,7 +28,7 @@
       "target": "https://registry.terraform.io",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.111,
+      "response_time": 0.148,
       "pass": true
     },
     {
@@ -36,7 +36,7 @@
       "type": "tls",
       "target": "github.com:443",
       "expiry": "2026-09-30T23:59:59+00:00",
-      "days_left": 89,
+      "days_left": 88,
       "pass": true
     },
     {
@@ -51,7 +51,7 @@
       "name": "GitHub SSH",
       "type": "tcp",
       "target": "github.com:22",
-      "response_time": 0.002,
+      "response_time": 0.003,
       "pass": true
     },
     {
@@ -66,7 +66,7 @@
       "type": "dns",
       "target": "github.com",
       "expected_ip": null,
-      "resolved_ip": "140.82.113.3",
+      "resolved_ip": "140.82.112.4",
       "pass": true
     }
   ]
