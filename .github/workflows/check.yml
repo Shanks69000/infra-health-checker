@@ -4,11 +4,12 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  packages: write
 
 jobs:
   check:
@@ -16,17 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
       - name: Run checker
         run: python checker.py || true
-
       - name: Commit reports
         run: |
           git config user.name "github-actions[bot]"
@@ -34,3 +31,24 @@ jobs:
           git add reports/
           git diff --cached --quiet || git commit -m "report: health check $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
+
+  build:
+    name: Build & Push Image
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/shanks69000/infra-health-checker:latest
+            ghcr.io/shanks69000/infra-health-checker:${{ github.sha }}
