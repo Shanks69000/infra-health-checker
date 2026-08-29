@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T21:41:43.417824+00:00",
+  "timestamp": "2026-08-29T05:30:15.995991+00:00",
   "total": 8,
   "passed": 8,
   "failed": 0,
@@ -10,7 +10,7 @@
       "target": "https://github.com",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.315,
+      "response_time": 0.124,
       "pass": true
     },
     {
@@ -28,7 +28,7 @@
       "target": "https://registry.terraform.io",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.116,
+      "response_time": 0.104,
       "pass": true
     },
     {
@@ -36,7 +36,7 @@
       "type": "tls",
       "target": "github.com:443",
       "expiry": "2026-09-30T23:59:59+00:00",
-      "days_left": 33,
+      "days_left": 32,
       "pass": true
     },
     {
@@ -51,14 +51,14 @@
       "name": "GitHub SSH",
       "type": "tcp",
       "target": "github.com:22",
-      "response_time": 0.054,
+      "response_time": 0.017,
       "pass": true
     },
     {
       "name": "Google DNS",
       "type": "tcp",
       "target": "8.8.8.8:53",
-      "response_time": 0.003,
+      "response_time": 0.004,
       "pass": true
     },
     {
