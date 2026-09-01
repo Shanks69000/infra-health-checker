@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-08-31T22:23:34.138967+00:00",
+  "timestamp": "2026-09-01T03:26:12.685192+00:00",
   "total": 8,
-  "passed": 7,
-  "failed": 1,
+  "passed": 8,
+  "failed": 0,
   "results": [
     {
       "name": "GitHub",
@@ -10,7 +10,7 @@
       "target": "https://github.com",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.063,
+      "response_time": 0.136,
       "pass": true
     },
     {
@@ -19,7 +19,7 @@
       "target": "https://hub.docker.com",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.25,
+      "response_time": 0.143,
       "pass": true
     },
     {
@@ -28,16 +28,16 @@
       "target": "https://registry.terraform.io",
       "expected_status": 200,
       "actual_status": 200,
-      "response_time": 0.158,
+      "response_time": 0.11,
       "pass": true
     },
     {
       "name": "GitHub TLS",
       "type": "tls",
       "target": "github.com:443",
-      "expiry": "2026-09-30T23:59:59+00:00",
-      "days_left": 30,
-      "pass": false
+      "expiry": "2026-11-27T23:59:59+00:00",
+      "days_left": 87,
+      "pass": true
     },
     {
       "name": "Docker Hub TLS",
@@ -51,14 +51,14 @@
       "name": "GitHub SSH",
       "type": "tcp",
       "target": "github.com:22",
-      "response_time": 0.006,
+      "response_time": 0.019,
       "pass": true
     },
     {
       "name": "Google DNS",
       "type": "tcp",
       "target": "8.8.8.8:53",
-      "response_time": 0.005,
+      "response_time": 0.002,
       "pass": true
     },
     {
@@ -66,7 +66,7 @@
       "type": "dns",
       "target": "github.com",
       "expected_ip": null,
-      "resolved_ip": "140.82.116.4",
+      "resolved_ip": "172.182.252.133",
       "pass": true
     }
   ]
