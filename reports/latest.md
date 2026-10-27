@@ -1,16 +1,16 @@
 # Infrastructure Health Report
 
-**Date** : 2026-10-27T11:33:23.104734+00:00
+**Date** : 2026-10-27T17:24:54.147828+00:00
 
 **Résultat** : 8/8 checks OK
 
 | Check | Type | Cible | Statut | Détail |
 |---|---|---|---|---|
-| GitHub | http | https://github.com | ✅ | HTTP 200 — 0.127s |
-| Docker Hub | http | https://hub.docker.com | ✅ | HTTP 200 — 0.146s |
-| Terraform Registry | http | https://registry.terraform.io | ✅ | HTTP 200 — 0.087s |
+| GitHub | http | https://github.com | ✅ | HTTP 200 — 0.166s |
+| Docker Hub | http | https://hub.docker.com | ✅ | HTTP 200 — 0.163s |
+| Terraform Registry | http | https://registry.terraform.io | ✅ | HTTP 200 — 0.08s |
 | GitHub TLS | tls | github.com:443 | ✅ | Expire dans 33 jours |
-| Docker Hub TLS | tls | hub.docker.com:443 | ✅ | Expire dans 74 jours |
-| GitHub SSH | tcp | github.com:22 | ✅ | 0.017s |
-| Google DNS | tcp | 8.8.8.8:53 | ✅ | 0.002s |
-| GitHub DNS | dns | github.com | ✅ | Résolu: 140.82.113.4 |
+| Docker Hub TLS | tls | hub.docker.com:443 | ✅ | Expire dans 73 jours |
+| GitHub SSH | tcp | github.com:22 | ✅ | 0.029s |
+| Google DNS | tcp | 8.8.8.8:53 | ✅ | 0.014s |
+| GitHub DNS | dns | github.com | ✅ | Résolu: 140.82.112.4 |
